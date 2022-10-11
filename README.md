@@ -45,7 +45,7 @@ After the above steps are completed, modify the path parameters of the [script](
 
 ## Inference
 
-Please modify the path parameters of the [script](https://github.com/jiahaozhenbang/SCOPE/blob/main/predict.sh) and run:
+Please modify the path parameters of the [script](predict.sh) and run:
 
 `bash predict.sh`
 
