@@ -1,3 +1,17 @@
+# data
+data/
+
+# zip
+*zip
+
+* FPT
+FPT/
+
+# log
+*out
+outputs/
+*logs
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

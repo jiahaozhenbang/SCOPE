@@ -22,16 +22,17 @@ Coming soon!
 
 
 ### Data Processing
-The code and cleaned data are in the `data_process` directory.
+- The code for cleaning data refers to [REALISE](https://github.com/DaDaMrX/ReaLiSe).
 
-You can also directly download the processed data from [this](https://drive.google.com/drive/folders/1dC09i57lobL91lEbpebDuUBS0fGz-LAk) and put them in the `data` directory. The `data` directory would look like this:
+Recommend to directly download the cleaned data from [this](https://rec.ustc.edu.cn/share/b8470c00-4884-11ed-abb5-01b9f59aa971) and put them in the `data` directory. 
+
+- process data to the training format. 
+
 ```
-data
-|- trainall.times2.pkl
-|- test.sighan15.pkl
-|- test.sighan15.lbl.tsv
-|- test.sighan14.pkl
-|- test.sighan14.lbl.tsv
-|- test.sighan13.pkl
-|- test.sighan13.lbl.tsv
+python data_process/get_train_data.py \
+    --data_path data \
+    --output_dir data
 ```
+
+## Finetune
+
