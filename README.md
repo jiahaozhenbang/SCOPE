@@ -1,11 +1,11 @@
 # SCOPE
 Source code for the paper "Improving Chinese Spelling Check by Character Pronunciation Prediction: The Effects of Adaptivity and Granularity" in EMNLP 2022 
 
-Coming soon!
+![](paper.png)
 
 ## Environment
 - Python: 3.8
-- Cuda: 11.7
+- Cuda: 11.7 (NVIDIA GeForce RTX 3090)
 - Packages: `pip install -r requirements.txt`
 
 ## Data
@@ -33,6 +33,25 @@ python data_process/get_train_data.py \
     --data_path data \
     --output_dir data
 ```
+## Further Pre-train
+
+Recommend to directly download the [checkpoint](https://rec.ustc.edu.cn/share/18549500-4936-11ed-bdbb-75a980e00e16) after FPT. 
 
 ## Finetune
+
+After the above steps are completed, modify the path parameters of the [script](https://github.com/jiahaozhenbang/SCOPE/blob/main/train.sh) and run:
+
+`bash train.sh`
+
+## Inference
+
+Please modify the path parameters of the [script](https://github.com/jiahaozhenbang/SCOPE/blob/main/predict.sh) and run:
+
+`bash predict.sh`
+
+## Citation
+
+If you find this work is useful for your research, please cite our papers:
+
+#### Improving Chinese Spelling Check by Character Pronunciation Prediction: The Effects of Adaptivity and Granularity
 
