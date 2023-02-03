@@ -56,11 +56,23 @@ If you find this work is useful for your research, please cite our papers:
 #### Improving Chinese Spelling Check by Character Pronunciation Prediction: The Effects of Adaptivity and Granularity
 
 ```bibtex
-@article{li2022improving,
-  title={Improving Chinese Spelling Check by Character Pronunciation Prediction: The Effects of Adaptivity and Granularity},
-  author={Li, Jiahao and Wang, Quan and Mao, Zhendong and Guo, Junbo and Yang, Yanyan and Zhang, Yongdong},
-  journal={arXiv preprint arXiv:2210.10996},
-  year={2022}
+@inproceedings{li-etal-2022-improving-chinese,
+    title = "Improving {C}hinese Spelling Check by Character Pronunciation Prediction: The Effects of Adaptivity and Granularity",
+    author = "Li, Jiahao  and
+      Wang, Quan  and
+      Mao, Zhendong  and
+      Guo, Junbo  and
+      Yang, Yanyan  and
+      Zhang, Yongdong",
+    booktitle = "Proceedings of the 2022 Conference on Empirical Methods in Natural Language Processing",
+    month = dec,
+    year = "2022",
+    address = "Abu Dhabi, United Arab Emirates",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2022.emnlp-main.287",
+    pages = "4275--4286",
+    abstract = "Chinese spelling check (CSC) is a fundamental NLP task that detects and corrects spelling errors in Chinese texts. As most of these spelling errors are caused by phonetic similarity, effectively modeling the pronunciation of Chinese characters is a key factor for CSC. In this paper, we consider introducing an auxiliary task of Chinese pronunciation prediction (CPP) to improve CSC, and, for the first time, systematically discuss the adaptivity and granularity of this auxiliary task. We propose SCOPE which builds upon a shared encoder two parallel decoders, one for the primary CSC task and the other for a fine-grained auxiliary CPP task, with a novel adaptive weighting scheme to balance the two tasks. In addition, we design a delicate iterative correction strategy for further improvements during inference. Empirical evaluation shows that SCOPE achieves new state-of-the-art on three CSC benchmarks, demonstrating the effectiveness and superiority of the auxiliary CPP task. Comprehensive ablation studies further verify the positive effects of adaptivity and granularity of the task.",
 }
+
 ```
 
